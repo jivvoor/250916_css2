@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>안녕하세요. 최지우입니다</title>
+    <!-- favicon -->
+    <!-- https://realfavicongenerator.net/ -->
+    <link rel="icon" type="image/png" href="/./favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/./favicon.svg" />
+    <link rel="shortcut icon" href="/./favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/./apple-touch-icon.png" />
+    <link rel="manifest" href="/./site.webmanifest" />
+    <!-- og tag-->
+    <meta property="og:title" content="백엔드 개발자 최지우 포트폴리오">
+    <meta property="og:description" content="안정적인 서비스의 기반을 다지는 백엔드 개발자 최지우입니다. 견고한 서버, 데이터베이스, API 설계를 통해 사용자에게 매끄러운 경험을 제공하는 것을 목표로 합니다.">
+    <meta property="og:image" content="">
+    <style>
+        /* 폰트 */
+        /* https://noonnu.cc/font_page/366 */
+        @font-face {
+        font-family: 'GMarketSans';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+        font-weight: 300;
+        font-display: swap;
+    }
+
+        @font-face {
+            font-family: 'GMarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: 500;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'GMarketSans';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+            font-weight: 700;
+            font-display: swap;
+        }
+        @font-face {
+            font-family: 'GowoonDodum';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff') format('woff');
+            font-weight: normal;
+            font-display: swap;
+        }
+
+        body {
+        
+            font-family: "GowoonDodum", serif;
+        }
+
+        .title {
+            font-family: "GMarketSans", serif;
+            font-size: 2em;
+            color: #587372;
+        }
+
+        /* 기본 전체 설정 */
+        * {
+            box-sizing: border-box;
+             /* 모든 box width, height를 우리 지정에 맞게 */;
+        }
+
+        body {
+            margin: 0; /* 기본 마진 */
+            background-color: #F0E8EE;
+            color: #587372;
+        }
+
+        /* 
+        색상 설정
+        - https://www.bairesdev.com/tools/ai-colors 
+        - https://2colors.colorion.co/ 
+        -  https://colorhunt.co/
+        - https://mobilepalette.colorion.co/
+        */
+
+        .box {
+            background-color: #B5D3D2;
+            padding: 12px;
+            border-radius: 12px;
+        }
+        
+        /*
+        전체 배경색 : #F0E8EE;
+        박스색 : #e6dee4;
+        컨텐츠색 : #B5D3D2;
+        글자색 : #587372;
+        */
+
+        /* 레이아웃 : 박스모델, 플렉스 */
+        body {
+            display: flex;
+            gap: 16px;
+            flex-direction: column;
+            /* 위에서 아래 방향으로 쌓아서 처리 */
+        }
+        body > section {
+            /* body에 바로 속한 section */
+            /* 자식 선택 -> 바로 속한 경우  */
+            padding: 0 24px;
+            max-width: 576px;
+            margin: auto;
+            width: 100%;
+    
+        }
+
+        #intro .title {
+            text-align: center;
+        }
+
+        #intro div {
+            line-height: 2;
+        }
+
+        #tech-stack h2 {
+            margin-top: 0; /* top, left, right, bottom */
+
+        }
+
+        #tech-stack ul {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: space-evenly;
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        #tech-stack li {
+            list-style: none;
+            width: 128px;
+            aspect-ratio: 1;
+            background-color: #FFB6C1;
+            border-radius: 8px;
+            border: 1px transparent solid;
+            padding: 8px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #tech-stack img {
+            width: 90%;
+            padding: 8px;
+            background-color: white;
+            border-radius: 50%;
+
+
+        }
+
+        #portfolio .box > div {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            
+        }
+
+        #portfolio .item {
+            background-color: #FFB6C1;
+            width: 100%;
+            height: 160px;
+            border-radius: 8px;
+            border: 2px white solid;
+            padding: 0 16px;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="intro">
+        <h1 class="title">반갑습니다<br /> 성장하는 백엔드 개발자<br /> 최지우입니다.</h1>
+        <section class="box">
+            <div>
+                저는 눈에 보이지 않는 서버, 데이터베이스, 그리고 애플리케이션 로직을 설계하고 구현하며 서비스의 심장을 만드는 일에 큰 보람을 느낍니다. 
+                <strong>안정적인 데이터 처리와 효율적인 API 설계</strong>를 통해 사용자가 매끄러운 경험을 할 수 있도록 돕는 것을 목표로 합니다.
+            </div>
+            <div>
+                '성장하는' 개발자라는 말처럼, 저는 <strong>현재에 안주하지 않고 끊임없이 새로운 기술을 탐구</strong>하고 <strong>동료들과 지식을 공유하며 함께 발전하는 것</strong>을 중요하게 생각합니다. 
+                견고한 아키텍처와 깔끔한 코드로 신뢰할 수 있는 서비스를 만드는 개발자가 되겠습니다.
+            </div>
+        </section>
+    </section>
+
+    <!-- flex 기반 레이아웃, svg repo -->
+
+    <!-- 기술 스택 (부트캠프) -->
+    <!-- https://www.svgrepo.com/ -->
+    <!-- https://icons8.com/ -->
+    <section id="tech-stack">
+        <section class="box">
+            <!-- https://emojipedia.org/ -->
+            <h2>💻 기술 스택</h2>
+            <ul>
+                <li>
+                    <img src="img/java.svg" alt="JAVA" /> </li>
+                <li>
+                    <img src="img/spring.svg" alt="SPRING" /> </li>
+                
+                <li>
+                    <img src="img/mysql.svg" alt="MYSQL" /> </li>
+                
+                <li>
+                    <img src="img/aws.svg" alt="AWS" /> </li>
+                
+                <li>
+                    <img src="img/github.svg" alt="GIT" /> </li>
+                
+            </ul>
+
+        </section>
+    </section>
+    <!-- 포트폴리오(3종) -->
+     <section id="portfolio">
+        <section class="box">
+            <h2>📂 포트폴리오</h2>
+            <div>
+                <div class="item">
+                    <h3>여행 추천 프로젝트</h3>
+                    <p>사용자 취향과 여행 데이터를 기반으로 맞춤형 여행지를 추천하는 API를 개발했습니다. Spring Boot와 JPA를 활용하여 효율적인 데이터 처리 로직을 구현했습니다.</p>
+                </div>
+                <div class="item">
+                    <h3>재능 매칭 프로젝트</h3>
+                    <p>재능을 가진 사람과 필요한 사람을 연결하는 플랫폼의 백엔드 시스템을 구축했습니다. 실시간 매칭 알고리즘과 안전한 결제 연동 기능 개발을 담당했습니다.</p>
+                </div>
+                <div class="item">
+                    <h3>AWS 인프라 프로젝트</h3>
+                    <p>AWS를 활용하여 확장 가능하고 안정적인 서비스 인프라를 구축했습니다. EC2, RDS, S3 등 주요 서비스를 연동하고, CI/CD 파이프라인을 설계하여 배포 자동화를 구현했습니다.</p>
+                </div>
+            </div>
+
+        </section>
+     </section>
+</body>
+</html>
